@@ -5,4 +5,4 @@
 <li>To test my consistency</li>
 <li>To check flaws in my understanding</li> <li>Blogs also help build a better portfolio (got this from a tech blog)</li> </ul>
 <h1>Tech Stack</h1>
-<p>I will update soon, blud.</p>
+<p>I will update soon, blud.I have too many works to do (I have to wash dishes)</p>
