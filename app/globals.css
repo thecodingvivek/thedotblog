@@ -2,12 +2,15 @@
 
 @import "tailwindcss";
 
+div{
+  box-sizing: border-box;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --primary:#D5D0BD;
-  --secondary:#727272;
+  --secondary:#cbcbcb;
 }
 
 @theme inline {
@@ -31,12 +34,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 
 .fadeborder{
-  background: linear-gradient(to bottom,#1F1F1F,rgba(162,158,144,0.8),#1F1F1F);
+  background: linear-gradient(to bottom,#1F1F1F,hsla(213,71%,20%,0.6),hsla(213,71%,20%,1),hsla(213,71%,20%,0.6),#1F1F1F);
 }
 
 .banner{
