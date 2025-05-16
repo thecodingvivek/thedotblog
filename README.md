@@ -1,36 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h1>What is thedotblog?</h1>
+<p>To put it simply, this is a personal blog for my daily updates on my stupid, diabolical, useless projects, stupid philosophies, and to share my depression so that you feel better because there are people who are dumber, stupider, and have messed up their life more than you. And this blog can easily make a suicidal man feel that he is worthy to live.</p>
+<h1>What is the motive?</h1>
+<p>One day, I was studying for my semester exams so hard that I barely remembered what I was reading, and the only thing I wrote confidently was my name.Even the date was a big doubt for me. So, to get a good score on my next exam, I pulled a diabolical plan to stalk a topper (my roommate) during exams. I waited for the next semester exams to arrive. I observed that he was asking everyone if they wanted an explanation for each topic so that they could perform better. And I was like, "Wait, wait... why does he want to explain in the first place? Is it out of friendliness or some strategy?" Then I was enlightened by Mahesh Babu’s dialogue:"Evari mata vinoddu, manishi maata asalu vinoddu."So by thinking deeply throughout the semester, I got to know at the end that: "I have messed up this semester too."Never mind I lowkey don’t care about GPA. But what I realized at the very end is that explaining something to others helps you discover the flaws in your own understanding and also tests how deeply you understand a concept. So, as simple as that.</p> <ul> 
+<li>To test my consistency</li>
+<li>To check flaws in my understanding</li> <li>Blogs also help build a better portfolio (got this from a tech blog)</li> </ul>
+<h1>Tech Stack</h1>
+<p>I will update soon, blud.</p>
