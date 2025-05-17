@@ -1,12 +1,14 @@
 import React from 'react'
 import { bricole } from '../fonts';
+import IndexPage from '../test/page';
 const Blog = () => {
 return (
     <>
     <div className="w-full min-h-screen h-[200vh] bg-black flex">
         <div className="w-[82%] h-full py-5 px-[20px]">
             <div className="bloghead w-full h-[180px]">
-                <span className={`${bricole.className} antialiased text-primary text-[200px] leading-[0.8] text-top font-extrabold`}>The Dot.</span>
+                {/* <span className={`${bricole.className} antialiased text-primary text-[200px] leading-[0.8] tracking-tight text-top font-extrabold`}>The Dot.</span> */}
+                <IndexPage />
             </div>
             <div className="banner w-full h-[200px] relative">
                 <div className="absolute top-[10px] left-[10px] w-fit h-fit">
@@ -19,7 +21,6 @@ return (
                 Why do we use it ? </p>
             </div>
         </div>
-
 
 
         <div className="border-l border-[#ffffff23] relative w-[18%] min-h-full pl-[1px]">

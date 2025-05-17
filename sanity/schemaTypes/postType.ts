@@ -8,7 +8,7 @@ export const postType = defineType({
     defineField({
       name: 'title',
       type: 'string',
-      validation: (rule) => rule.required(),
+      validation: (rule) => rule.required().max(14),
     }),
     defineField({
       name: 'slug',
@@ -18,7 +18,7 @@ export const postType = defineType({
     }),
     defineField({
       name: 'publishedAt',
-      type: 'datetime',
+      type: 'date',
       initialValue: () => new Date().toISOString(),
       validation: (rule) => rule.required(),
     }),
@@ -32,4 +32,7 @@ export const postType = defineType({
       of: [{type: 'block'}],
     }),
   ],
+  initialValue:{
+    gradient:"linear-gradient(to right,#8F3F12,#663024,#3C0847,#2E0450,#09266A,#053271,#26508C,#324B99,#3C448C,#4A2A41,#371517,#140402)"
+  }
 })
