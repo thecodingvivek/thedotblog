@@ -29,7 +29,20 @@ export const postType = defineType({
     defineField({
       name: 'body',
       type: 'array',
-      of: [{type: 'block'}],
+      of: [{type: 'block'},{
+        type: 'image',
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text',
+              description: 'Important for SEO and accessiblity.',
+                options: {
+                  isHighlighted: true,
+              },
+            },
+          ],
+      }],
     }),
   ],
   initialValue:{
