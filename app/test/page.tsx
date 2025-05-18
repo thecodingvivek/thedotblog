@@ -24,6 +24,7 @@ export default async function PostPage({
   const post = await client.fetch<SanityDocument>(POST_QUERY, await params, options);
   // const postImageUrl = post.image
   //   ? urlFor(post.image)?.width(550).height(310).url()
+  // console.log(post.body);
   //   : null;
 
   return (
