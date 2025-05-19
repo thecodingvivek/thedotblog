@@ -17,12 +17,12 @@ return (
             <div className="w-full h-screen  flex flex-col sticky top-0 px-[10px]">
                 <div className="w-full flex-auto relative flex flex-col items-center pt-[20px]">
                     <div className="fadeborder z-[998] absolute top-0 left-[50%] transform translate-x-[-50%] h-full w-[1px]"></div>
-                    <div className="w-[60px] z-[999] h-[60px] rounded-full bg-[hsla(213,71%,20%,1)] flex items-center justify-center">
-                        <span className={`${bricole.className} text-[32px] text-[#52a8ff] font-semibold`}>1</span>
+                    <div className="w-[60px] z-[999] h-[60px] rounded-full bg-[#beb9a8] flex items-center justify-center">
+                        <span className={`${bricole.className} text-[32px] text-[#000] font-semibold`}>1</span>
                     </div>
                 </div>
                 <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full">
-                    <path d="M0,50 A50,50 0 0 1 100,50" fill="#1F1F1F" />
+                    <path d="M0,50 A50,50 0 0 1 100,50" fill="#beb9a8" />
                 </svg>
             </div>
         </div>

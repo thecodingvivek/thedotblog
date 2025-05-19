@@ -41,10 +41,10 @@ h1{
   font-weight: 800;
 }
 .fadeborder{
-  background: linear-gradient(to bottom,#1F1F1F,hsla(213,71%,20%,0.6),hsla(213,71%,20%,1),hsla(213,71%,20%,0.6),#1F1F1F);
+  background: linear-gradient(to bottom,#1F1F1F,#d5d0bd41,#D5D0BD,#d5d0bd41,#1F1F1F);
 }
 
 .banner{
-  background: linear-gradient(to right,#8F3F12,#663024,#3C0847,#2E0450,#09266A,#053271,#26508C,#324B99,#3C448C,#4A2A41,#371517,#140402);
+  background: linear-gradient(45deg,#8F3F12,#663024,#3C0847,#2E0450,#09266A,#053271,#26508C,#324B99,#3C448C,#4A2A41,#371517,#140402);
 
 }
