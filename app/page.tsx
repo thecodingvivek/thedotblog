@@ -1,103 +1,98 @@
-import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <>
+    <div className="w-screen h-screen bg-[#000] flex relative overflow-hidden">
+      <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
+        <div className="w-fit h-fit flex flex-col items-start">
+          <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
+          <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
+          <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
+          <div className="search w-full h-10 rounded-full border border-[#1f1f1f]"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="w-[60%] h-full flex relative items-center justify-center">
+        <div className="dot h-full aspect-square bg-primary rounded-full"></div>
+        
+        <svg className='orbitone' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle className='orbit'
+            cx="60" cy="60" r="50" 
+            stroke="#D5D0BD" 
+            stroke-width="0.2"
+            fill="none" 
+            stroke-dasharray="1 2"  />
+        </svg>
+        
+        <svg className='orbitgrad'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id={"fade-left"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="black" stop-opacity="0" />
+              <stop offset="15%" stop-color="black" stop-opacity="1" />
+              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="50"  stroke-width="2"  fill="none" className="orbitlu" />
+        </svg>
+
+          
+        <svg className='orbittwo' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle className='orbit'
+            cx="60" cy="60" r="50" 
+            stroke="rgba(213, 208, 189, 0.6)" 
+            stroke-width="0.2"
+            fill="none" 
+            stroke-dasharray="1 2" />
+        </svg>
+
+        <svg className='orbitgradtwo'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id={"fade-left"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="black" stop-opacity="0" />
+              <stop offset="5%" stop-color="green" stop-opacity="1" />
+              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="50"  stroke-width="2" fill="none" className="orbitlu" />
+        </svg>
+
+        <svg className='orbitthree' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle className='orbit'
+            cx="60" cy="60" r="50" 
+            stroke="rgba(213, 208, 189, 0.4)" 
+            stroke-width="0.2"
+            fill="none" 
+            stroke-dasharray="1 2" />
+        </svg>
+
+        <svg className='orbitgradthree'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id={"fade-left-three"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="black" stop-opacity="0" />
+              <stop offset="35%" stop-color="black" stop-opacity="1" />
+              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="50"  strokeWidth="2" fill="none" className="orbitlu" />
+        </svg>
+      </div>
     </div>
-  );
+
+
+    <div className="detailcont absolute w-fit h-fit  flex flex-col items-end leading-10">
+      <span className='prime text-[24px] ml-[2px] font-extrabold text-black '>2025</span>
+      <span className='prime text-[64px] font-extrabold text-black'>the dot</span>
+      <span className='prime text-[16px] ml-[2px] font-extrabold text-black '>May 1st</span>
+    </div>
+
+    <div className="absolute bottom-[10px] left-[10px] w-fit px-[8px] py-[2px] flex border border-[#1F1F1F] bg-secondary gap-3 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" fill='#666666' viewBox="0 0 72 72">
+        <path d="M36 23c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13S28.82 23 36 23zM40 11c0 .732 0 3.268 0 4 0 2.209-1.791 4-4 4s-4-1.791-4-4c0-.732 0-3.268 0-4 0-2.209 1.791-4 4-4S40 8.791 40 11zM56.506 21.151c-.518.518-2.311 2.311-2.828 2.828-1.562 1.562-4.095 1.562-5.657 0s-1.562-4.095 0-5.657c.518-.518 2.311-2.311 2.828-2.828 1.562-1.562 4.095-1.562 5.657 0S58.068 19.589 56.506 21.151zM61 40c-.732 0-3.268 0-4 0-2.209 0-4-1.791-4-4s1.791-4 4-4c.732 0 3.268 0 4 0 2.209 0 4 1.791 4 4S63.209 40 61 40zM50.849 56.506c-.518-.518-2.311-2.311-2.828-2.828-1.562-1.562-1.562-4.095 0-5.657s4.095-1.562 5.657 0c.518.518 2.311 2.311 2.828 2.828 1.562 1.562 1.562 4.095 0 5.657S52.411 58.068 50.849 56.506zM32 61c0-.732 0-3.268 0-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 .732 0 3.268 0 4 0 2.209-1.791 4-4 4S32 63.209 32 61zM15.494 50.849c.518-.518 2.311-2.311 2.828-2.828 1.562-1.562 4.095-1.562 5.657 0s1.562 4.095 0 5.657c-.518.518-2.311 2.311-2.828 2.828-1.562 1.562-4.095 1.562-5.657 0S13.932 52.411 15.494 50.849zM11 32c.732 0 3.268 0 4 0 2.209 0 4 1.791 4 4s-1.791 4-4 4c-.732 0-3.268 0-4 0-2.209 0-4-1.791-4-4S8.791 32 11 32zM21.151 15.494c.518.518 2.311 2.311 2.828 2.828 1.562 1.562 1.562 4.095 0 5.657s-4.095 1.562-5.657 0c-.518-.518-2.311-2.311-2.828-2.828-1.562-1.562-1.562-4.095 0-5.657S19.589 13.932 21.151 15.494z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#666666"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+    </div>
+
+    </>
+  )
 }
+

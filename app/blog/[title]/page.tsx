@@ -1,16 +1,16 @@
 import React from 'react'
 import { bricole } from '../../fonts';
-import PostPage from '../../test/page';
+// import PostPage from '../../test/page';
 
 const Blog = async ({ params }: { params: { title: string } }) => {
 
-const { title } = await params; 
+// const { title } = await params; 
 
 return (
     <>
-    <div className="w-full min-h-screen h-[200vh] bg-black flex">
+    <div className="w-full min-h-screen h-[100vh] bg-black flex">
         <div className="w-[82%] h-full py-5 px-[20px]">
-            <PostPage title={ decodeURIComponent(title) } />
+            {/* <PostPage title={ decodeURIComponent(title) } /> */}
         </div>
 
         <div className="border-l border-[#ffffff23] relative w-[18%] min-h-full pl-[1px]">
@@ -21,9 +21,9 @@ return (
                         <span className={`${bricole.className} text-[32px] text-[#000] font-semibold`}>1</span>
                     </div>
                 </div>
-                <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full">
-                    <path d="M0,50 A50,50 0 0 1 100,50" fill="#beb9a8" />
-                </svg>
+                <div className="w-[100%] aspect-[2/1] relative">
+                    <div className="absolute bottom-0 left-0 aspect-[2/1] rounded-tl-full rounded-tr-full bg-primary "></div>
+                </div>
             </div>
         </div>
     </div>

@@ -34,6 +34,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 h1{
@@ -47,4 +48,98 @@ h1{
 .banner{
   background: linear-gradient(45deg,#8F3F12,#663024,#3C0847,#2E0450,#09266A,#053271,#26508C,#324B99,#3C448C,#4A2A41,#371517,#140402);
 
+}
+
+.dot{
+  transform: translateX(50%);
+  margin-left: auto;
+}
+
+.search{
+  background: linear-gradient(to right,#000,#d5d0bd05,#d5d0bd18,#d5d0bd30,#d5d0bd18,#d5d0bd05,#000);
+  backdrop-filter: blur(100px);
+}
+
+
+
+.orbitgrad{
+  position: absolute;
+  height: calc(100% + 350px);
+  transform: translate(50%,-50%);
+  right: 0;
+  top: 50%;
+}
+
+.orbitgradtwo{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  height: calc(100% + 575px);
+}
+
+.orbitgradthree{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  height: calc(100% + 850px);
+}
+
+
+.orbitlu{
+  stroke: url('#fade-left');
+}
+
+.orbitone{
+  position: absolute;
+  height: calc(100% + 350px);
+  transform: translate(50%,-50%);
+  right: 0;
+  top: 50%;
+  animation: orbit 60s linear infinite;
+}
+
+.orbittwo{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%,-50%);
+  height: calc(100% + 575px);
+  animation: orbit 80s linear infinite;
+}
+
+.orbitthree{
+  position: absolute;
+  transform: translate(50%,-50%);
+  right: 0;
+  top: 50%;
+  height: calc(100% + 850px);
+  animation: orbit 110s linear infinite;
+}
+
+
+
+
+.detailcont{
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.orbit{
+  mix-blend-mode: multiply;
+}
+
+.gradientmask {
+  mix-blend-mode: multiply;
+}
+
+@keyframes orbit {
+  0%{
+    transform: translate(50%,-50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(50%,-50%) rotate(360deg);
+  }
 }
