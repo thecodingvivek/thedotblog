@@ -1,38 +1,43 @@
-
+import SearchPage from "./searchPage";
 export default function Home() {
 
   return (
     <>
     <div className="w-screen h-screen bg-[#000] flex relative overflow-hidden">
+      <SearchPage />
       <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
         <div className="w-fit h-fit flex flex-col items-start">
           <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
           <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
           <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
-          <div className="search w-full h-10 rounded-full border border-[#1f1f1f]"></div>
+          <div className="search pl-[20px] pr-[5px] py-[5px] w-full h-12 rounded-full flex items-center justify-between border border-[#1f1f1f] cursor-pointer">
+              <span className="text-[16px] text-[#ffffff67]">search here</span>
+              <div className="h-full aspect-square rounded-full bg-[#ffffff2e] flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D5D0BD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+          </div>
         </div>
       </div>
       <div className="w-[60%] h-full flex relative items-center justify-center">
         <div className="dot h-full aspect-square bg-primary rounded-full"></div>
-        
         <svg className='orbitone' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <circle className='orbit'
             cx="60" cy="60" r="50" 
             stroke="#D5D0BD" 
-            stroke-width="0.2"
+            strokeWidth="0.2"
             fill="none" 
-            stroke-dasharray="1 2"  />
+            strokeDasharray="1 2"  />
         </svg>
         
         <svg className='orbitgrad'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id={"fade-left"} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="black" stop-opacity="0" />
-              <stop offset="15%" stop-color="black" stop-opacity="1" />
-              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            <linearGradient id={"fadeLeft"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="black" stopOpacity="0" />
+              <stop offset="15%" stopColor="black" stopOpacity="1" />
+              <stop offset="100%" stopColor="black" stopOpacity="0" />
             </linearGradient>
           </defs>
-          <circle cx="60" cy="60" r="50"  stroke-width="2"  fill="none" className="orbitlu" />
+          <circle cx="60" cy="60" r="50"  strokeWidth="2"  fill="none" className="orbitlu" />
         </svg>
 
           
@@ -40,37 +45,37 @@ export default function Home() {
           <circle className='orbit'
             cx="60" cy="60" r="50" 
             stroke="rgba(213, 208, 189, 0.6)" 
-            stroke-width="0.2"
+            strokeWidth="0.2"
             fill="none" 
-            stroke-dasharray="1 2" />
+            strokeDasharray="1 2" />
         </svg>
 
         <svg className='orbitgradtwo'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id={"fade-left"} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="black" stop-opacity="0" />
-              <stop offset="5%" stop-color="green" stop-opacity="1" />
-              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            <linearGradient id={"fadeLeft"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="black" stopOpacity="0" />
+              <stop offset="5%" stopColor="green" stopOpacity="1" />
+              <stop offset="100%" stopColor="black" stopOpacity="0" />
             </linearGradient>
           </defs>
-          <circle cx="60" cy="60" r="50"  stroke-width="2" fill="none" className="orbitlu" />
+          <circle cx="60" cy="60" r="50"  strokeWidth="2" fill="none" className="orbitlu" />
         </svg>
 
         <svg className='orbitthree' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <circle className='orbit'
             cx="60" cy="60" r="50" 
             stroke="rgba(213, 208, 189, 0.4)" 
-            stroke-width="0.2"
+            strokeWidth="0.2"
             fill="none" 
-            stroke-dasharray="1 2" />
+            strokeDasharray="1 2" />
         </svg>
 
         <svg className='orbitgradthree'  viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id={"fade-left-three"} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="black" stop-opacity="0" />
-              <stop offset="35%" stop-color="black" stop-opacity="1" />
-              <stop offset="100%" stop-color="black" stop-opacity="0" />
+            <linearGradient id={"fadeLeftThree"} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="black" stopOpacity="0" />
+              <stop offset="35%" stopColor="black" stopOpacity="1" />
+              <stop offset="100%" stopColor="black" stopOpacity="0" />
             </linearGradient>
           </defs>
           <circle cx="60" cy="60" r="50"  strokeWidth="2" fill="none" className="orbitlu" />

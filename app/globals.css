@@ -56,7 +56,7 @@ h1{
 }
 
 .search{
-  background: linear-gradient(to right,#000,#d5d0bd05,#d5d0bd18,#d5d0bd30,#d5d0bd18,#d5d0bd05,#000);
+  background: linear-gradient(to right,#000,#d5d0bd05,#d5d0bd12,#d5d0bd14,#d5d0bd12,#d5d0bd05,#000);
   backdrop-filter: blur(100px);
 }
 
