@@ -1,21 +1,16 @@
-import SearchPage from "./searchPage";
+import SearchButton from "./searchButton";
+
 export default function Home() {
 
   return (
     <>
     <div className="w-screen h-screen bg-[#000] flex relative overflow-hidden">
-      <SearchPage />
       <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
         <div className="w-fit h-fit flex flex-col items-start">
           <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
           <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
           <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
-          <div className="search pl-[20px] pr-[5px] py-[5px] w-full h-12 rounded-full flex items-center justify-between border border-[#1f1f1f] cursor-pointer">
-              <span className="text-[16px] text-[#ffffff67]">search here</span>
-              <div className="h-full aspect-square rounded-full bg-[#ffffff2e] flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D5D0BD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              </div>
-          </div>
+          <SearchButton />
         </div>
       </div>
       <div className="w-[60%] h-full flex relative items-center justify-center">
