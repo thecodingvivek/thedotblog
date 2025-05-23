@@ -3,10 +3,10 @@ import { bricole } from '../../fonts';
 import PostPage from '../../test/page';
 
 interface PageProps {
-    title: string;
-  }
+    params: Promise<{ title: string }>;
+}
 
-const Blog = async ({ params }: { params: PageProps}) => {
+const Blog = async ({ params }: PageProps) => {
 
 const { title } = await params;
 
