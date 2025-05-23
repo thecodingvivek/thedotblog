@@ -1,14 +1,12 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { type SanityDocument } from 'next-sanity';
 import { ClientSearch } from './clientSearch';
 
 export default function SearchButton ({ initBlogs } : { initBlogs:SanityDocument[]}){
 
   const [click,setClick]  = useState(false);
-  useEffect(()=>{
-    console.log(click);
-  },[click])
+
 
   return (
     <>
@@ -21,8 +19,7 @@ export default function SearchButton ({ initBlogs } : { initBlogs:SanityDocument
       {
         click && 
         <>
-              <ClientSearch  intialBlogs={ initBlogs }/>
-
+          <ClientSearch  intialBlogs={ initBlogs } func={() => setClick(false)} />
         </>
       }
     </>

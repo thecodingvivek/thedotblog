@@ -16,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` antialiased ${bricole.className}`}
-      >
+      <body className={`${bricole.className}`}>
         {children}
       </body>
     </html>

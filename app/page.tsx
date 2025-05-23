@@ -16,14 +16,15 @@ export default async function Home() {
     <>
     <div className="w-screen h-screen bg-[#000] flex relative overflow-hidden">
       <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
+
         <div className="w-fit h-fit flex flex-col items-start">
           <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
           <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
           <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
           <SearchButton initBlogs={post} />
-          {/* <ClientSearch intialBlogs={post}  /> */}
         </div>
       </div>
+
       <div className="w-[60%] h-full flex relative items-center justify-center">
         <div className="dot h-full aspect-square bg-primary rounded-full"></div>
         <svg className='orbitone' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +47,6 @@ export default async function Home() {
           <circle cx="60" cy="60" r="50"  strokeWidth="2"  fill="none" className="orbitlu" />
         </svg>
 
-          
         <svg className='orbittwo' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <circle className='orbit'
             cx="60" cy="60" r="50" 
@@ -86,9 +86,9 @@ export default async function Home() {
           </defs>
           <circle cx="60" cy="60" r="50"  strokeWidth="2" fill="none" className="orbitlu" />
         </svg>
+
       </div>
     </div>
-
 
     <div className="detailcont absolute w-fit h-fit  flex flex-col items-end leading-10">
       <span className='prime text-[24px] ml-[2px] font-extrabold text-black '>2025</span>
@@ -102,7 +102,6 @@ export default async function Home() {
       </svg>
       <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#666666"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
     </div>
-
     </>
   )
 }

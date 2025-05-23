@@ -5,6 +5,9 @@
 div{
   box-sizing: border-box;
 }
+span {
+  display: inline; /* Not block or inline-block unless needed */
+}
 
 :root {
   --background: #ffffff;
