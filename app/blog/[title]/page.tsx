@@ -1,16 +1,16 @@
 import React from 'react'
 import { bricole } from '../../fonts';
-// import PostPage from '../../test/page';
+import PostPage from '../../test/page';
 
 const Blog = async ({ params }: { params: { title: string } }) => {
 
-// const { title } = await params; 
+const { title } = await params; 
 
 return (
     <>
     <div className="w-full min-h-screen h-[100vh] bg-black flex">
         <div className="w-[82%] h-full py-5 px-[20px]">
-            {/* <PostPage title={ decodeURIComponent(title) } /> */}
+            <PostPage title={ decodeURIComponent(title) } />
         </div>
 
         <div className="border-l border-[#ffffff23] relative w-[18%] min-h-full pl-[1px]">

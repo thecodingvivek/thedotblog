@@ -55,6 +55,7 @@ export const ClientSearch = ({ intialBlogs,func }: { intialBlogs: SanityDocument
                         <div className="banner w-full h-[60%] rounded-[16px] flex items-center justify-center">
                             <span className='text-[24px] font-semibold'>{ blog.title }</span>
                         </div>
+                        <div className="px-[10px]"><span className='text-[16px] text-[#ffffffb5]'>Mar 1st</span></div>
                         <Link href={`/blog/${blog.title}`} className='w-[40%] ml-auto h-[40px] bg-amber-50 rounded-full mt-auto flex items-center justify-center cursor-pointer'>
                               <span className='text-black text-[12px] font-semibold'>view blog</span>
                         </Link>
