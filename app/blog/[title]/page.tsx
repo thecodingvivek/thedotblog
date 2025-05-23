@@ -2,9 +2,13 @@ import React from 'react'
 import { bricole } from '../../fonts';
 import PostPage from '../../test/page';
 
-const Blog = async ({ params }: { params: { title: string } }) => {
+interface PageProps {
+    title: string;
+  }
 
-const { title } = await params; 
+const Blog = async ({ params }: { params: PageProps}) => {
+
+const { title } = await params;
 
 return (
     <>
