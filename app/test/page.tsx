@@ -3,8 +3,8 @@ import { client } from "@/sanity/client";
 import { bricole } from '../fonts';
 
 type PageProps = {
-    params: { title: string };
-  };
+    title: string;
+};
 
 const { projectId, dataset } = client.config();
 const options = { next: { revalidate: 30 } };
@@ -27,9 +27,10 @@ const serialize = (blocks: SanityDocument[]) => {
     }).join('\n');
 };
 
-export default async function PostPage( { params }: PageProps) {
+export default async function PostPage({ title }: PageProps) {
+
    
-  const POST_QUERY = `*[_type == "post" && title == "${params.title}"][0]`;
+  const  POST_QUERY = `*[_type == "post" && title == "${ title }"][0]`;
 
 
   const post = await client.fetch<SanityDocument>(POST_QUERY,{}, options);
