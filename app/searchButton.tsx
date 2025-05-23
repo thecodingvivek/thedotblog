@@ -1,10 +1,14 @@
 'use client'
-import React, { useState } from 'react'
-import SearchPage from './searchPage';
+import React, { useEffect, useState } from 'react'
+import { type SanityDocument } from 'next-sanity';
+import { ClientSearch } from './clientSearch';
 
-export default function SearchButton (){
+export default function SearchButton ({ initBlogs } : { initBlogs:SanityDocument[]}){
 
   const [click,setClick]  = useState(false);
+  useEffect(()=>{
+    console.log(click);
+  },[click])
 
   return (
     <>
@@ -14,8 +18,13 @@ export default function SearchButton (){
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D5D0BD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </div>
       </div>
+      {
+        click && 
+        <>
+              <ClientSearch  intialBlogs={ initBlogs }/>
 
-        <SearchPage />
+        </>
+      }
     </>
     );
 }

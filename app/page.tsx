@@ -1,6 +1,16 @@
 import SearchButton from "./searchButton";
+import { client } from "@/sanity/client";
+import { SanityDocument } from 'next-sanity';
 
-export default function Home() {
+
+export default async function Home() {
+  const options = { next: { revalidate: 30 } };
+  const QUERY =`*[_type == "post"] | order(publishedAt desc)[0...10] {
+      title,
+      slug,
+  }`;
+
+  const post = await client.fetch<SanityDocument []>(QUERY,{}, options);
 
   return (
     <>
@@ -10,7 +20,8 @@ export default function Home() {
           <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
           <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
           <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
-          <SearchButton />
+          <SearchButton initBlogs={post} />
+          {/* <ClientSearch intialBlogs={post}  /> */}
         </div>
       </div>
       <div className="w-[60%] h-full flex relative items-center justify-center">
