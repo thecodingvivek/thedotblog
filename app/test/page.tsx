@@ -3,10 +3,8 @@ import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { bricole } from '../fonts';
 
-type PageProps = {
-  params: {
-    title: string;
-  };
+type BlogProps = {
+    title:string
 };
 
 const { projectId, dataset } = client.config();
@@ -30,7 +28,7 @@ const serialize = (blocks: SanityDocument[]) => {
     }).join('\n');
 };
 
-export default async function PostPage({ params: { title } }: PageProps) {
+export default async function PostPage({ title }: BlogProps) {
   const POST_QUERY = `*[_type == "post" && title == "${ title }"][0]`;
   const post = await client.fetch<SanityDocument>(POST_QUERY, {}, options);
 
