@@ -1,6 +1,6 @@
 import React from 'react'
 import { bricole } from '../../fonts';
-import PostPage from '../../test/page';
+import PostPage from '../../test/PostPage';
 
 interface PageProps {
     params: Promise<{ title: string }>;
