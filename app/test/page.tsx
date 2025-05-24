@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import { bricole } from '../fonts';
