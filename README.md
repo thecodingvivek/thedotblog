@@ -1,3 +1,4 @@
+<b>This project is still under development !!!</b>
 <h1>What is thedotblog?</h1>
 <p>To put it simply, this is a personal blog for my daily updates on my stupid, diabolical, useless projects, stupid philosophies, and to share my depression so that you feel better because there are people who are dumber, stupider, and have messed up their life more than you. And this blog can easily make a suicidal man feel that he is worthy to live.</p>
  
