@@ -12,7 +12,7 @@ const { title } = await params;
 
 return (
     <>
-    <div className="w-full min-h-screen h-[100vh] bg-black flex">
+    <div className="w-full min-h-screen h-fit bg-black flex">
         <div className="w-[82%] h-full py-5 px-[20px]">
             <PostPage title={ decodeURIComponent(title) } />
         </div>
