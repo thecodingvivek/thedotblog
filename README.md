@@ -12,3 +12,5 @@
     <li>Sanity</li>
     <li>Tailwindcss</li>
 </ul>
+
+![dotblogprototype](https://github.com/user-attachments/assets/fc88bf35-1039-4c9d-b954-86d00df90619)
