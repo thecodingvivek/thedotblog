@@ -15,14 +15,14 @@ export default async function Home() {
 
   return (
     <>
-    <div className="w-screen h-screen bg-[#000] z-[990] flex relative overflow-hidden">
+    <div className="w-screen h-screen bg-[#000] z-[1] flex relative overflow-hidden">
       <SpaceBackground />
       <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
 
-        <div className="w-fit h-fit flex flex-col items-start">
-          <span className='prime text-[60px] ml-[2px] font-extrabold text-primary'>the dot</span>
-          <span className='prime text-[128px] font-extrabold text-primary'>Blog</span>
-          <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px]'>By Vivek Chitturi</span>
+        <div className="w-fit h-fit flex flex-col items-start ">
+          <span className='prime text-[60px] ml-[2px] font-extrabold text-primary mix-blend-difference'>the dot</span>
+          <span className='prime text-[128px] font-extrabold text-primary mix-blend-difference'>Blog</span>
+          <span className='prime text-[12px] ml-[4px] font-extrabold text-primary mt-[-10px] mix-blend-difference'>By Vivek Chitturi</span>
           <SearchButton initBlogs={post} />
         </div>
       </div>
