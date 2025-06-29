@@ -15,7 +15,7 @@ export default async function Home() {
 
   return (
     <>
-    <div className="w-screen h-screen bg-[#000] z-[1] flex relative overflow-hidden">
+    <div className="w-screen h-screen bg-[#000] z-1 flex relative overflow-hidden">
       <SpaceBackground />
       <div className="w-[40%] h-full flex items-center justify-center flex-col leading-18">
 
@@ -27,7 +27,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="w-[60%] h-full flex relative items-center justify-center">
+      <div className="w-[60%] h-full flex relative items-center justify-center z-1">
         <div className="dot h-full aspect-square bg-primary rounded-full"></div>
         <svg className='orbitone' viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <circle className='orbit'
@@ -90,13 +90,14 @@ export default async function Home() {
         </svg>
 
       </div>
+        <div className="detailcont absolute w-fit h-fit  flex flex-col items-end leading-10 z-1">
+          <span className='prime text-[24px] ml-[2px] font-extrabold text-black '>2025</span>
+          <span className='prime text-[64px] font-extrabold text-black'>the dot</span>
+          <span className='prime text-[16px] ml-[2px] font-extrabold text-black '>May 1st</span>
+        </div>
     </div>
 
-    <div className="detailcont absolute w-fit h-fit  flex flex-col items-end leading-10 z-1">
-      <span className='prime text-[24px] ml-[2px] font-extrabold text-black '>2025</span>
-      <span className='prime text-[64px] font-extrabold text-black'>the dot</span>
-      <span className='prime text-[16px] ml-[2px] font-extrabold text-black '>May 1st</span>
-    </div>
+
 
     </>
   )

@@ -37,7 +37,7 @@ export const ClientSearch = ({ intialBlogs,func }: { intialBlogs: SanityDocument
   
 
   return (
-    <div className='w-screen h-screen absolute top-0 right-0 bg-[#0000008c] backdrop-blur-[20px] z-[999] p-5 flex flex-col items-center leading-normal'>
+    <div className='w-screen h-screen fixed top-0 right-0 bg-[#0000008c] backdrop-blur-[20px] z-50 p-5 flex flex-col items-center leading-normal'>
       <div className="w-full h-fit flex  justify-center  items-center relative">
         <div className="w-[600px] h-[50px] rounded-full bg-[#ffffff1c] backdrop-blur-3xl flex border border-[#ffffff0f] px-5">
             <input type="text" onChange={(e)=>{debouncedSearch(e.target.value)}} className='w-full h-full outline-0 border-0' placeholder='search' />
