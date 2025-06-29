@@ -15,7 +15,7 @@ const serialize = (blocks: SanityDocument[]) => {
         if (block._type === 'block') {
             const tag = block.style === 'normal' ? 'p' : block.style;
             const text: string = block.children.map((child: { text: string }) => child.text).join('');
-            return `<${tag} class="${bricole.className} text-white text-[20px] font-[500]">${text}</${tag}>`;
+            return `<${tag} class="${bricole.className} text-white text-[20px] font-[500] ${tag==="h1" && "mt-[20px]"}"  >${text}</${tag}>`;
         }
         if (block._type === 'image') {
             const alt = block.alt || '';
