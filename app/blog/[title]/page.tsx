@@ -12,12 +12,12 @@ const { title } = await params;
 
 return (
     <>
-    <div className="w-full min-h-screen h-fit bg-black flex">
+    <div className="w-full min-h-screen h-fit bg-black flex justify-center">
         <div className="w-[82%] h-full py-5 px-[20px]">
             <PostPage title={ decodeURIComponent(title) } />
         </div>
 
-        <div className="border-l border-[#ffffff23] relative w-[18%] min-h-full pl-[1px]">
+        {/* <div className="border-l border-[#ffffff23] relative w-[18%] min-h-full pl-[1px]">
             <div className="w-full h-screen  flex flex-col sticky top-0 px-[10px]">
                 <div className="w-full flex-auto relative flex flex-col items-center pt-[20px]">
                     <div className="fadeborder z-[998] absolute top-0 left-[50%] transform translate-x-[-50%] h-full w-[1px]"></div>
@@ -29,7 +29,7 @@ return (
                     <div className="absolute bottom-0 left-0 aspect-[2/1] rounded-tl-full rounded-tr-full bg-primary "></div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
     <footer className='w-full h-[400px] bg-black relative'>
         <div className="w-fit h-fit absolute bottom-0 left-[20px]">
